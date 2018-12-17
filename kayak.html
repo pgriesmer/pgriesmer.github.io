@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<link rel="stylesheet" href="style.css"></link>
+	<link href="https://fonts.googleapis.com/css?family=Roboto Slab:100,300,400,500,700,900" rel="stylesheet">
+</head>
+	
+<body>
+	<div class="header">
+		<ul class="links">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="about.html">About</a>
+			</li>
+			<li>
+				<a href="education.html">Education</a>
+			</li>
+			<li>
+				<a href="projects.html">Projects</a>
+			</li>
+			<li>
+				<a href="resume.html">Resume</a>
+			</li>
+		</ul>
+	</div>
+	<div class="content">
+		<div class="content-header">
+			<h2>Kayak About Page</h2>
+			<h4 class="subheading">Software Engineering Internship, Summer 2018</h4>
+		</div>
+		<div id="about-container">
+			<div class="project-paragraph-container">
+				<h2 class="project-paragraph-step">Overview</h2>
+			</div>
+			<div class="project-paragraph-container">
+				<p>As an intern at KAYAK this past summer, I developed new versions of several pages whose links appear in the company's site footer. One such page was the <a href="https://kayak.com/about">About page</a>.</p>
+			</div>
+			<div class="old-and-new">
+				<div class="old-and-new-content-container">
+					<a href="https://web.archive.org/web/20170504220815/https://www.kayak.com/about">
+						<div class="old-and-new-image-container">
+							<img class="old-image" src="./oldabout.png">
+						</div>
+						<div class="project-paragraph-caption">Old version</div>
+					</a>
+				</div>
+				<div class="old-and-new-content-container">
+					<a href="http://kayak.com/about">
+						<div class="old-and-new-image-container">
+							<img class="new-image" src="newabout.png">
+						</div>
+						<div class="project-paragraph-caption">New version</div>
+					</a>
+				</div>
+			</div>
+			<div class="project-paragraph-container">
+				<p>With its outdate appearance, the old version of the About page was doing little to galvanize potential hires to apply for positions with the company.</p>
+			</div>
+			<div class="project-paragraph-container">
+				<h2 class="project-paragraph-step">1 // Hero</h2>
+			</div>
+			<div class="project-paragraph-container">
+				<p>After being given a design and assets for the page, I started by building a hero component that now appears atop many of the pages in the footer section of the site. I built this part of the page as a component so that the background image and overlay text could vary from one page to the next.</p>
+			</div>
+			<div class="project-paragraph-image-container">
+				<img class="project-paragraph-image" src="hero1.png">
+			</div>
+			<div class="project-paragraph-image-container">
+				<img class="project-paragraph-image" src="hero2.png">
+			</div>
+			<div class="project-paragraph-image-container">
+				<img class="project-paragraph-image" src="hero3.png">
+			</div>
+			<div class="project-paragraph-container">
+				<h2 class="project-paragraph-step">2 // Slider</h2>
+			</div>
+			<div class="project-paragraph-container">
+				<p>Perhaps the most involved part of the page was a slider that appears in the "statistics" section on smaller screen sizes.</p>
+			</div>
+			<div class="project-paragraph-image-container">
+				<img class="project-paragraph-image" src="smallstats.png">
+			</div>
+			<div class="project-paragraph-container">
+				<p>After initially configuring the slider to be draggable, I rebuilt it so users would have to click an arrow on either side of the slider to make it slide left or right. The idea for the latter design came from Netflix's streaming menu.</p>
+			</div>
+			<div class="project-paragraph-image-container project-video-container">
+				<video controls>
+					<source src="sliderthreewide.mov">
+				</video>
+			</div>
+			<div class="project-paragraph-container">
+				<p class="black-paragraph">Note how, when three cards are in view (as in the video above), the slider moves three cards at a time. However, when only one card is in view (as below), the slider moves only one card at a time.</p>
+
+				<p>I configured the slider to calculate the number of whole "cards" in view at any point in time and slide left or right by the same number of cards with each click of the left- or right-facing arrow.</p>
+			</div>
+			<div class="project-paragraph-image-container project-video-container-two">
+				<video controls>
+					<source src="slideronewide.mov">
+				</video>
+			</div>
+			<div class="project-paragraph-container">
+				<h2 class="project-paragraph-step">3 // Offices</h2>
+			</div>
+			<div class="project-paragraph-container">
+				<p>Towards the bottom of the page is a section containing information about each of the company's offices. I coded these "office cards" as components so that developers could simply add or remove an office from a list of configurable properties when a new office was opened or closed.</p>
+
+				<p class="black-paragraph">I also built the header for the same section (which only appears on larger screen sizes) to rotate through greetings in the different languages associated with the countries in which KAYAK owned an office. If the company ever adds or removes an office from the configurable list of offices, the greeting associated with that particular office will be automatically added to this rotation.</p>
+			</div>
+			<div class="project-paragraph-image-container project-video-container">
+				<video controls>
+					<source src="offices.mov">
+				</video>
+			</div>
+			<div class="project-paragraph-container">
+				<h2 class="project-paragraph-step">Outcomes</h2>
+			</div>
+			<div class="project-paragraph-container">
+				<p>This project taught me a great deal about web components since nearly every section of this page was its own component. I also learned about all the work it takes to (1) properly configure SEO functionality and (2) make a webpage accessible.</p>
+			</div>
+		</div>
+		<div class="project-footer"></div>
+	</div>
+</body>
+</html>

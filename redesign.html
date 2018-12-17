@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<link rel="stylesheet" href="style.css"></link>
+	<link href="https://fonts.googleapis.com/css?family=Roboto Slab:100,300,400,500,700,900" rel="stylesheet">
+</head>
+	
+<body>
+	<div class="header">
+		<ul class="links">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="about.html">About</a>
+			</li>
+			<li>
+				<a href="education.html">Education</a>
+			</li>
+			<li>
+				<a href="projects.html">Projects</a>
+			</li>
+			<li>
+				<a href="resume.html">Resume</a>
+			</li>
+		</ul>
+	</div>
+	<div class="content">
+		<div class="content-header">
+			<h2>Brown CS Website Redesign</h2>
+			<h4 class="subheading">CS1300 Project, Fall 2018</h4>
+		</div>
+		<div id="about-container">
+			<div class="project-paragraph-container">
+				<h2 class="project-paragraph-step">Overview</h2>
+			</div>
+			<div class="project-paragraph-container">
+				<p>As part of my UI/UX course this fall, I redesigned <a href="cs.brown.edu">the website for Brown's Computer Science Department</a>.</p> 
+			</div>
+			<div class="project-paragraph-container">
+				<p>The Brown CS Department's website is plagued by inconsistent, disorganized layout and suffers from a generally unprofessional look overall. Classmates of mine have described the color scheme and fonts as "gimmicky," and the navigation presents users with more options than it should. The media queries it uses often make the site look worse at small screen sizes.</p>
+			</div>
+			<div class="old-and-new">
+				<div class="old-and-new-content-container">
+					<a href="https://cs.brown.edu">
+						<div class="old-and-new-heading project-paragraph-caption">Current homepage</div>
+						<div class="old-and-new-image-container">
+							<img class="old-image" src="./currentbrowncs.png">
+						</div>
+					</a>
+				</div>
+				<div class="old-and-new-content-container">
+					<a href="Hi-Fi.pdf">
+						<div class="old-and-new-heading project-paragraph-caption">Redesigned homepage</div>
+						<div class="old-and-new-image-container">
+							<img class="new-image" src="./hifi.jpg">
+						</div>
+					</a>
+				</div>
+			</div>
+			
+			<div class="project-paragraph-container">
+				<h2 class="project-paragraph-step">1 // Lo-Fi Mockups</h2>
+			</div>
+			<div class="project-paragraph-container">
+				<p>I began my project by doing lo-fi mockups for new versions of five preexisting pages for tablet-sized screens.</p>
+			</div>
+			<div class="project-paragraph-image-container brown-cs-site-container">
+				<a href="https://cs.brown.edu">
+					<span class="project-paragraph-caption">Home</span>
+					<img class="project-paragraph-image" src="home.png">
+				</a>
+				<a href="https://cs.brown.edu/events" target="_blank">
+					<span class="project-paragraph-caption">Events</span>
+					<img class="project-paragraph-image" src="events.png">
+				</a>
+				<a href="https://cs.brown.edu/about/rooms" target="_blank">
+					<span class="project-paragraph-caption">Rooms</span>
+					<img class="project-paragraph-image" src="rooms.png">
+				</a>
+				<a href="https://cs.brown.edu/about/partners" target="_blank">
+					<span class="project-paragraph-caption">Industry Partners</span>
+					<img class="project-paragraph-image" src="partners.png">
+				</a>
+				<a href="https://cs.brown.edu/degrees/undergrad" target="_blank">
+					<span class="project-paragraph-caption">Undergraduate Degree</span>
+					<img class="project-paragraph-image" src="undergrad.png">
+				</a>
+			</div>
+			<div class="project-paragraph-image-container">
+				<a href="Lo-Fi.pdf" target="_blank">
+					<img class="project-paragraph-image" src="lofi.jpg">
+				</a>
+			</div>
+			<div class="project-paragraph-container">
+				<p class="black-paragraph">My redesign created consistency from page to page by introducing a three-column layout. Whitespace was added to make the site much easier on the eyes. The site's main navigation menu was simplified significantly and breadcrumbs were made to appear on every page (rather than on certain pages and not on others, as is currently the case). Interactive tools (e.g., calendars) and photos were added throughout to make the site more engaging and easier to understand on certain pages (e.g., the "Events" page).</p>
+			</div>
+			<div class="project-paragraph-container">
+				<h2 class="project-paragraph-step">2 // Hi-Fi Prototype</h2>
+			</div>
+			<div class="project-paragraph-container">
+				<p>Once I had finished the lo-fi mockups shown above and settled on a general style for the website, I did a hi-fi prototype for the site's homepage. 
+			</div>
+			<div class="project-paragraph-container">
+				<p class="black-paragraph">The fonts were chosen to give the site more gravitas, and colors were chosen from a very simple palette to give the site a much more understated appearance (and generally go unnoticed by the user). Ideally, photos on the homepage would update dynamically based on the latest "News"/"Blog" articles and "Events" blurbs.</p>
+			</div>
+			<div class="project-paragraph-image-container">
+				<a href="Hi-Fi.pdf" target="_blank">
+					<img class="project-paragraph-image" src="hifi.jpg">
+				</a>
+			</div>
+			<div class="project-paragraph-container">
+				<h2 class="project-paragraph-step">3 // Responsive Site</h2>
+			</div>
+			<div class="project-paragraph-container">
+				<p>I then coded up a responsive version of the homepage where I made a number of adjustments for mobile screens and 4K screens (in case the site was ever used in a presentation).</p>
+			</div>
+			<div class="project-paragraph-container">
+				<p class="black-paragraph">On mobile, a one-column layout replaced the default three-column layout for readability, and the navigation menu was simplified even further by replacing it with a hamburger icon.</p>
+			</div>
+			<div class="project-paragraph-container">
+				<p class="project-paragraph-centered project-paragraph-caption">Mobile</p>
+			</div>
+			<div class="project-paragraph-image-container project-mobile-container">
+				<div class="project-mobile-image-container">
+					<a href="" target="_blank">
+						<div class="project-mobile-image-inner-container">
+							<img class="project-paragraph-image project-mobile-image-left" src="mobile2.png">
+							<img class="project-paragraph-image" src="mobile.png">
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="project-paragraph-container">
+				<p>The 4K version of the site featured the last two combined columns of the tablet/desktop view broken out into two separate columns, so that the images on the site would appear in reasonable proportion to one another.</p>
+			</div>
+			<div class="project-paragraph-container">
+				<p class="project-paragraph-centered project-paragraph-caption">4K</p>
+			</div>
+			<div class="project-paragraph-image-container">
+				<div class="project-4k-image-container">
+					<a href="Hi-Fi.pdf" target="_blank">
+						<img class="project-paragraph-image" src="4k.png">
+					</a>
+				</div>
+			</div>
+			<div class="project-paragraph-container">
+				<h2 class="project-paragraph-step">Outcomes</h2>
+			</div>
+			<div class="project-paragraph-container">
+				<p>This project was the first time I had ever (1) done a series of lo-fi mockups for the same site and (2) designed a hi-fi prototype based on a lo-fi design. It also taught me how to use Balsamiq for lo-fi designs and Adobe XD for hi-fi designs.</p>
+				<p>If I had more time to work on the project, I would have scaled down the hero image that appears atop the homepage so that users wouldn't have to scroll as far down to get to the content beneath. I would also make this same image into a carousel and would have resized several fonts on the 4K version of the site to make them appear proportional to the rest of the content on the page. </p>
+			</div>
+		</div>
+		<div class="project-footer"></div>
+	</div>
+</body>
+</html>
