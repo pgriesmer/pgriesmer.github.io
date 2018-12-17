@@ -28,111 +28,99 @@
 	</div>
 	<div class="content">
 		<div class="content-header">
-			<h2>Fixers Iterative Design</h2>
-			<h4 class="subheading">CS1300 Group Project, Fall 2018</h4>
+			<h2>Just Shoe Me Search Page</h2>
+			<h4 class="subheading">CS1300 Project, Fall 2018</h4>
 		</div>
 		<div id="about-container">
 			<div class="project-paragraph-container">
 				<h2 class="project-paragraph-step">Overview</h2>
 			</div>
 			<div class="project-paragraph-container">
-				<p>As part of my UI/UX course at Brown this fall, I worked with Ragna Agerup and Megs Malpali to design an interface for a startup launched at Y Combinator this year, Fixers. Our assignment required us to create an interface based solely on <a class="inline-link" href="https://techcrunch.com/2018/08/21/all-59-startups-that-launched-today-at-y-combinators-s18-demo-day-2/" target="_blank">TechCrunch's summary of the company</a>: 
-
-				<p class="black-paragraph">"Travel and experience marketplace Fixers pitches experiences ranging from yoga retreasts to trail-running weekends and music festivals that are curated by locals in the know. It's designed to help travelers discover and book trips they couldn't find anywhere else."</p>
+				<p>As part of my UI/UX course at Brown this fall, I was tasked with using React to develop a webpage that could filter and sort a dozen different items. <a class="inline-link" href="https://aqueous-refuge-89997.herokuapp.com/" target="_blank">The page I built</a> could eventually be used as a results page for an online men's shoe store.
 			</div>
 			<div class="project-paragraph-container">
-				<h2 class="project-paragraph-step">1 // Lo-Fi Mockups</h2>
+				<h2 class="project-paragraph-step">1 // Components</h2>
 			</div>
 			<div class="project-paragraph-container">
-				<p>We quickly put together several lo-fi mockups to think through different ideas about how we might design our interface. Among the ideas we considered were location-based search, activity-based search, and a personality quiz that produced recommendations for users based on their interests.</p>
+				<p>I began by making three components: one for the site header, one for each product that would appear on the results page, and one for the list that would contain these products.</p>
 			</div>
-			<div class="project-paragraph-container fixers-lo-container fixers-1-container">
-				<div>
-					<img src="fixers1a.png">
-				</div>
-				<div>
-					<img src="fixers1b.png">
-				</div>
-				<div>
-					<img src="fixers1c.png">
-				</div>
-				<div>
-					<img src="fixers1d.png">
-				</div>
+			<div class="project-paragraph-container shoe-image-container">
+				<img class="shoe-header-image" src="shoeheader.png">
 			</div>
-			<div class="project-paragraph-container fixers-lo-caption-container">
-				<p class="project-paragraph-centered project-paragraph-caption">Location-based search</p>
+			<div class="project-paragraph-container shoe-caption-container">
+				<p class="project-paragraph-centered project-paragraph-caption">Header component</p>
 			</div>
-			<div class="project-paragraph-container fixers-lo-container fixers-2-container">
-				<div>
-					<img src="fixers2a.png">
-				</div>
-				<div>
-					<img src="fixers2b.png">
-				</div>
-				<div>
-					<img src="fixers2c.png">
-				</div>
+			<div class="project-paragraph-container shoe-image-container">
+				<img class="shoe-product-image" src="shoeproduct.png">
 			</div>
-			<div class="project-paragraph-container fixers-lo-caption-container">
-				<p class="project-paragraph-centered project-paragraph-caption">Activity-based search</p>
+			<div class="project-paragraph-container shoe-caption-container">
+				<p class="project-paragraph-centered project-paragraph-caption">Product component</p>
 			</div>
-			<div class="project-paragraph-container fixers-lo-container fixers-3-container">
-				<div>
-					<img src="fixers3a.png">
-				</div>
-				<div>
-					<img src="fixers3b.png">
-				</div>
-				<div>
-					<img src="fixers3c.png">
-				</div>
+			<div class="project-paragraph-container shoe-image-container">
+				<img class="shoe-list-image" src="shoelist.png">
 			</div>
-			<div class="project-paragraph-container fixers-lo-caption-container">
-				<p class="project-paragraph-centered project-paragraph-caption">Personality quiz and recommended activities</p>
+			<div class="project-paragraph-container shoe-caption-container">
+				<p class="project-paragraph-centered project-paragraph-caption">List component</p>
 			</div>
 			<div class="project-paragraph-container">
-				<h2 class="project-paragraph-step">2 // Hi-Fi Prototypes</h2>
+				<h2 class="project-paragraph-step">2 // Filters</h2>
 			</div>
 			<div class="project-paragraph-container">
-				<p>We ultimately decided that a location-based search (with some modifications) would be the most intuitive design for users and began building a <a class="inline-link" href="https://www.figma.com/file/gdNw2PeWO5XvNBTNF91OmxCC/Iterative-Design%3A-Fixers?node-id=0%3A1" target="_blank">hi-fi prototype</a> for our idea.</p>
-				<p>After choosing the font and color scheme, I designed the header component for each of the pages on our site.</p>
+				<p>I thought an online shoe store could distinguish itself by indicating when users might wear different shoes. To this end, I added an "Occasion" field to each product and gave users the ability to filter by the same.</p>
 			</div>
-			<div class="project-paragraph-container fixers-hi-fi-container">
-				<img src="fixershi1.png">
-				<img src="fixershi2.png">
+			<div class="project-paragraph-container shoe-image-container">
+				<img class="shoe-full-width-image" src="shoematerialfilter.png">
 			</div>
-			<div class="project-paragraph-container">
-				<p>As seen above, we liked the idea of using the search parameters from our home screen as filters on the search results page. We thought users would want to be able to filter by date, price, type of activity (which we called a "theme"), and location.</p>
-			</div>
-			<div class="project-paragraph-container fixers-hi-fi-container">
-				<img src="fixershi3.png">
+			<div class="project-paragraph-container shoe-caption-container">
+				<p class="project-paragraph-centered project-paragraph-caption">Occasion filter</p>
 			</div>
 			<div class="project-paragraph-container">
-				<p>In our estimation, one of the advantages of the Fixers platform over rival platforms (like <a href="https://www.airbnb.com/s/experiences?refinement_paths%5B%5D=%2Fexperiences" target="_blank">AirBnB's Experiences section</a>) would be the ability to add (1) free activities and (2) activities without any particular date or time associated to them to a user's itinerary (which also served as a user's shopping cart).</p>
-				<p class="black-paragraph">I had the idea that experiences in a user's itinerary could be ordered by date but that experiences without a particular date or time associated with them could be draggable elements into which users could write in a date and time if they so wished.</p>
+				<p class="black-paragraph">I then added a second filter so that users could filter out only certain materials, search functionality that serves as a dynamic filter, and a "Reset Filters" button to reset both the occasion and material filters to their default state.</p>
 			</div>
-			<div class="project-paragraph-container fixers-hi-fi-container">
-				<img src="fixershi4.png">
+			<div class="project-paragraph-container shoe-image-container">
+				<img class="shoe-full-width-image" src="shoeoccasionfilter.png">
+			</div>
+			<div class="project-paragraph-container shoe-caption-container">
+				<p class="project-paragraph-centered project-paragraph-caption">Material filter</p>
+			</div>
+			<div class="project-paragraph-container shoe-image-container">
+				<img class="shoe-full-width-image" src="shoesearch.png">
+			</div>
+			<div class="project-paragraph-container shoe-caption-container">
+				<p class="project-paragraph-centered project-paragraph-caption">Search filter</p>
 			</div>
 			<div class="project-paragraph-container">
-				<h2 class="project-paragraph-step">3 // Eyetracking</h2>
+				<h2 class="project-paragraph-step">3 // Sorting</h2>
 			</div>
 			<div class="project-paragraph-container">
-				<p>We used eyetracking software to test out whether users would navigate our interface in the way that we expected. We were most interested in the order in which they would review information on the Itinerary page, and we found some support for a hypothesis we devised about the same.</p>
-				<p class="black-paragraph">We expected users to first look at the page header, then at the product photos, then dates,  product names, costs, edit links and delete icons, total, and "Checkout" button before clicking the same. Our subject's actual eye movements are shown below:</p>
+				<p>I also gave users the ability to sort by ascending or descending price. By default, I configured it so that footwear is sorted by ascending price.</p>
 			</div>
-			<div class="project-paragraph-image-container project-video-container">
-				<video controls>
-					<source src="fixersreplay.mov">
-				</video>
+			<div class="project-paragraph-image-container shoe-image-container">
+				<img class="shoe-full-width-image" src="shoesort.png">
+			</div>
+			<div class="project-paragraph-container shoe-caption-container">
+				<p class="project-paragraph-centered project-paragraph-caption">Sort by descending price</p>
 			</div>
 			<div class="project-paragraph-container">
 				<h2 class="project-paragraph-step">Outcomes</h2>
 			</div>
 			<div class="project-paragraph-container">
-				<p>We presented our hi-fi designs to several of our classmates and received a fair amount of positive feedback about our UI. That said, if I had more time, I would reposition the calendar and reviews on the product page to make the layout a little cleaner. I might also change the Itinerary page header to conform more closely to the other page headers on our site.</p>
-				<p>This project was my first major exposure to Figma and first-ever exposure to eyetracking. I particularly enjoyed writing the JavaScript code needed to recreate the order in which our test user looked at the different elements on Itinerary page.</p>
+				<div class="project-paragraph-image-container shoe-image-container">
+					<a href="https://aqueous-refuge-89997.herokuapp.com/" target="_blank">
+						<img class="shoe-ascending-image" src="shoeascending.png">
+					</a>
+				</div>
+				<div class="project-paragraph-container shoe-caption-container">
+					<p class="project-paragraph-centered project-paragraph-caption">
+						<a href="https://aqueous-refuge-89997.herokuapp.com/" target="_blank">
+							Final product
+						</a>
+					</p>
+				</div>
+				<p>The filters, search, and sorting outlined above work in conjunction with one another on the <a class="inline-link" href="https://aqueous-refuge-89997.herokuapp.com/" target="_blank">final page</a>. 
+				<p class="black-paragraph">Users can sort by price descending and then filter down to "Canvas" shoes only and would only be shown canvas footwear in price-descending order.</p>
+				<p>As someone whose primary JavaScript background revolves around AngularJS, this project helped me adjust to the paradigm needed to work with React.</p>
+				<p>If I had more time, I would add the ability to sort by occasion (i.e., dressiness) as well. I would also change the favicon to something more representative of the site and tweak the amount of whitespace I'm using a bit more until it looks just right.
 			</div>
 		<div class="project-footer"></div>
 	</div>

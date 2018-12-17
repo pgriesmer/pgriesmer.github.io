@@ -221,7 +221,15 @@ a:hover {
 }
 
 .project-video-container-two video {
-	width: 50%;
+	width: 60%;
+}
+
+.project-video-container-three {
+	text-align: center;
+}
+
+.project-video-container-three video {
+	width: 40%;
 }
 
 .project-mobile-container {
@@ -255,6 +263,30 @@ a:hover {
 	height: 50px;
 }
 
+.kayak-image-container {
+	text-align: center;
+}
+
+.kayak-image {
+	width: 80%;
+}
+
+.kayak-image-two {
+	width: 40%;
+}
+
+.kayak-image-three {
+	width: 60%;
+}
+
+.kayak-office-image {
+	width: 40%;
+}
+
+.kayak-caption-above {
+	margin-bottom: 10px;
+}
+
 .brown-cs-site-container {
 	display: flex;
 	justify-content: center;
@@ -276,11 +308,19 @@ a:hover {
 	display: inline-block;
 }
 
+.brown-cs-hifi-image-container {
+	text-align: center;
+}
+
+.brown-cs-hifi-image {
+	width: 80%;
+}
+
 .fixers-lo-container {
 	margin-bottom: 0;
 }
 
-.fixers-lo-caption-container {
+.fixers-lo-caption-container, {
 	margin-top: 0;
 	margin-bottom: 50px;
 }
@@ -299,6 +339,8 @@ a:hover {
 .fixers-2-container {
 	display: flex;
 	justify-content: space-between;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .fixers-2-container div {
@@ -331,6 +373,36 @@ a:hover {
 
 .fixers-hi-fi-container img {
 	width: 80%;
+}
+
+.shoe-image-container {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.shoe-caption-container {
+	margin-top: 0;
+	margin-bottom: 60px;
+}
+
+.shoe-header-image {
+	width: 80%;
+}
+
+.shoe-product-image {
+	width: 40%;
+}
+
+.shoe-list-image {
+	width: 60%;
+}
+
+.shoe-full-width-image {
+	width: 80%;
+}
+
+.shoe-ascending-image {
+	width: 60%;
 }
 
 /* Media queries: */
